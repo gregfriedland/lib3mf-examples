@@ -148,7 +148,7 @@ int main (int argc, const char * argv[])
 	sOutputFilename += sNewExtension;
 
 	// Create Model Instance
-	hResult = lib3mf_createmodel(&pModel);
+	hResult = lib3mf_createmodel(&pModel, true);
 	if (hResult != LIB3MF_OK) {
 		std::cout << "could not create model: " << std::hex << hResult << std::endl;
 		return -1;
